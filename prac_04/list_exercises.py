@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Basic list operations
+Basic list operations and security checker
 """
 
 
@@ -23,3 +23,12 @@ def get_list():
 
 
 main()
+
+
+usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface', 'BaseStdIn',
+             'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+name = input("Name: ")
+if name in usernames:
+    print("Access granted")
+else:
+    print("Access denied")
