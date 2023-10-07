@@ -25,6 +25,7 @@ def get_data():
 
 
 def display_subject_details(records):
+    """Print the fata like: subject is taught by lecturer and has this number of students"""
     for record in records:
         print(f"{record[0]} is taught by {record[1]} and has {record[2]} students")
 
