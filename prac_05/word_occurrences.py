@@ -31,7 +31,7 @@ def determine_largest_word(largest_word, word):
 
 def print_dictionary_items(largest_word, word_to_count):
     """Prints keys with values from dictionary"""
-    for word in word_to_count:
+    for word in sorted(word_to_count):
         print(f"{word:{len(largest_word)}} : {word_to_count[word]}")
 
 
