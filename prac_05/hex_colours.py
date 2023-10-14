@@ -1,7 +1,7 @@
 """
 CP1404/CP5632 Practical
 Intermediate Exercise
-
+Hex Colours
 """
 
 
@@ -18,6 +18,7 @@ def main():
 
 
 def get_valid_colour(COLOUR_TO_CODE, colour_name):
+    """Get valid colour name and either code or invalid message"""
     if colour_name in COLOUR_TO_CODE:
         print(f"{colour_name} is #{COLOUR_TO_CODE[colour_name]}")
     else:
