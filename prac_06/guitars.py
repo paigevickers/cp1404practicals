@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 Practical
 Do-from-scratch Exercises - Use the Guitar class in a program
-Estimate: 15 minutes
-Actual: 10 minutes
+Estimate: 45 minutes
+Actual: 1 hour
 """
 from guitar import Guitar
 
