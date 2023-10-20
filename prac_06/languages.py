@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 Practical
 Intermediate Exercise - Using ProgramingLanguage class in a program
-Estimate:
-Actual:
+Estimate: 20 minutes
+Actual: 20 minutes
 """
 from programming_language import ProgrammingLanguage
 

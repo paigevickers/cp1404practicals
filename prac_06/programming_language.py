@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 Practical
 Intermediate Exercise - ProgramingLanguage class
-Estimate:
-Actual:
+Estimate: 10 minutes
+Actual: 5 minutes
 """
 
 
