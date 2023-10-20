@@ -14,8 +14,8 @@ def main():
     print(another_guitar)
     print(f"{gibson.name} get_age() - Expected 101. Got {gibson.get_age()}")  # test get_age() works correctly
     print(f"{another_guitar.name} get_age() - Expected 10. Got {another_guitar.get_age()}")
-    print(f"{gibson.name} is_vintage - Expected 101. Got {gibson.is_vintage()}")  # test is_vintage work correctly
-    print(f"{another_guitar.name} is_vintage - Expected 101. Got {another_guitar.is_vintage()}")
+    print(f"{gibson.name} is_vintage - Expected True. Got {gibson.is_vintage()}")  # test is_vintage work correctly
+    print(f"{another_guitar.name} is_vintage - Expected False. Got {another_guitar.is_vintage()}")
 
 
 main()
