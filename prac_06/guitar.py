@@ -13,14 +13,19 @@ class Guitar:
         self.name = name
         self.year = year
         self.cost = cost
+        self.age = 0
 
     def __str__(self):
         """Return string of Guitar object"""
         return f"{self.name} ({self.year}) : ${self.cost}"
 
+    def get_age(self):
+        """Determine age of guitar"""
+        self.age = 2023 - self.year
+
     def is_vintage(self):
         """Determine if the Guitar object is vintage"""
-        if (2023 - self.year) >= 50:
+        if  self.age >= 50:
             return True
         else:
             return False
