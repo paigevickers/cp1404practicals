@@ -1,6 +1,6 @@
 """
 CP1404/CP5632 Practical
-Do-from-scratch Exercises - Create guitar class
+Do-from-scratch Exercises - Create Guitar class
 Estimate: 15 minutes
 Actual: 10 minutes
 """
