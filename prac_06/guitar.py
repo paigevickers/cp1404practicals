@@ -8,7 +8,7 @@ Actual: 10 minutes
 
 class Guitar:
     """Represent a Guitar object"""
-    def __init__(self, name="", year=0, cost=0.0):
+    def __init__(self, name="".title(), year=0, cost=0.0):
         """Initialise a Guitar instance"""
         self.name = name
         self.year = year
@@ -20,12 +20,12 @@ class Guitar:
         return f"{self.name} ({self.year}) : ${self.cost}"
 
     def get_age(self):
-        """Determine age of guitar"""
         self.age += 2023 - self.year
+        return self.age
 
     def is_vintage(self):
         """Determine if the Guitar object is vintage"""
-        if  self.age >= 50:
+        if (2023 - self.year) >= 50:
             return True
         else:
             return False
