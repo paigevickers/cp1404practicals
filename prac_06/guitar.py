@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 Practical
 Do-from-scratch Exercises - Create guitar class
-Estimate: 20 minutes
-Actual: 20 minutes
+Estimate: 15 minutes
+Actual: 10 minutes
 """
 
 
@@ -21,7 +21,7 @@ class Guitar:
 
     def get_age(self):
         """Determine age of guitar"""
-        self.age = 2023 - self.year
+        self.age += 2023 - self.year
 
     def is_vintage(self):
         """Determine if the Guitar object is vintage"""
