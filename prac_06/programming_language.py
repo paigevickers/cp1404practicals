@@ -22,3 +22,7 @@ class ProgrammingLanguage:
             return True
         else:
             return False
+
+    def __str__(self):
+        return f"{self.language}, {self.typing} Typing, Reflection={self.reflection}, " \
+               f"First appeared in {self.year}"
