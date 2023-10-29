@@ -33,10 +33,14 @@ class Guitar:
     def __lt__(self, other):
         return self.year < other.year
 
+    def __iter__(self):
+        return iter([self.name, self.year, self.cost])
+
 
 # def run_test():
 #     guitar = Guitar("Fender", 1966, 200)
 #     print(guitar)
+#     print(type(guitar.year))
 #
 #
 # run_test()
