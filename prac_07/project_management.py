@@ -1,8 +1,8 @@
 """
 CP1404/CP5632 Practical
 Do-from-scratch - Project Management Program
-Estimate: minutes
-Actual: minutes
+Estimate: 40 minutes
+Actual: 60 minutes
 """
 import datetime
 
@@ -19,7 +19,8 @@ def main():
         # print("Data loaded.")
         if choice == "L":
             filename = input("Filename: ")
-            print("Projects loaded")
+            # projects = load_data(filename, projects)
+            # print("Projects loaded")
 
         if choice == "S":
             out_filename = input("Data file to save to: ")
@@ -27,7 +28,12 @@ def main():
             print("Projects saved.")
 
         if choice == "D":
-            display_projects(projects)
+            print("Incomplete projects:")
+            incomplete_projects = get_incomplete_projects(projects)
+            print_projects(incomplete_projects)
+            print("Complete projects:")
+            complete_projects = get_complete_projects(projects)
+            print_projects(complete_projects)
 
         if choice == "U":
             for project in projects:
@@ -40,7 +46,7 @@ def main():
             get_new_priority(new_priority, project_choice, projects)
 
         if choice == "A":
-            print("Let's ass a new project")
+            print("Let's add a new project")
             name = input("Name: ")
             start_date = input("Start date (dd/mm/yy): ")
             priority = input("Priority: ")
@@ -50,7 +56,7 @@ def main():
             projects.append(project)
 
         if choice == "F":
-            date_string = input("Show projects that start after the date (dd/mm/yy): ")
+            date_string = input("Show projects that start after the date (dd/mm/yyyy): ")
             date = datetime.datetime.strptime(date_string, "%d/%m/%Y").date()
             for project in projects:
                 if datetime.datetime.strptime(project.start_date, "%d/%m/%Y").date() > date:
@@ -59,6 +65,7 @@ def main():
         print_menu()
         choice = input(">>> ").upper()
     print("Thank you for using custom-built project management software.")
+
 
 def get_new_priority(new_priority, project_choice, projects):
     while new_priority != "":
@@ -76,15 +83,6 @@ def get_new_percentage(new_percentage, project_choice, projects):
             if projects.index(project) == project_choice:
                 project.completion_percentage = new_percentage
         break
-
-
-def display_projects(projects):
-    print("Incomplete projects:")
-    incomplete_projects = get_incomplete_projects(projects)
-    print_projects(incomplete_projects)
-    print("Complete projects:")
-    complete_projects = get_complete_projects(projects)
-    print_projects(complete_projects)
 
 
 def get_complete_projects(projects):
