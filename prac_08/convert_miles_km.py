@@ -1,7 +1,8 @@
 """
 CP1404 Practical 8
 GUI program to convert miles to kilometres
-Author: Paige Vickers
+Estimate: 10 minutes
+Actual: 20 minutes
 """
 
 from kivy.app import App

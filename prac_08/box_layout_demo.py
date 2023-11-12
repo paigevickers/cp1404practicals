@@ -1,3 +1,10 @@
+"""
+CP1404 Practical 8
+GUI program to convert miles to kilometres
+Estimate: 10 minutes
+Actual: 5 minutes
+"""
+
 from kivy.app import App
 from kivy.lang import Builder
 

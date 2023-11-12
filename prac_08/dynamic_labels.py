@@ -1,7 +1,7 @@
 """
 CP1404 Practical 8
-Dynamically create labels based on content of dictionary
-Author: Paige Vickers
+Estimate: 10 minutes
+Actual: 10 minutes
 """
 
 from kivy.app import App
