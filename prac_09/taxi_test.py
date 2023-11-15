@@ -1,6 +1,6 @@
 """
 CP1404 Practical 09
-Test the taxi class
+Test the Taxi class
 """
 from taxi import Taxi
 
