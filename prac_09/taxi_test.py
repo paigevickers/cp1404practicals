@@ -4,7 +4,7 @@ Test the taxi class
 """
 from taxi import Taxi
 
-my_taxi = Taxi("Prius 1", 100, 1.23)  # create taxi object
+my_taxi = Taxi("Prius 1", 100)  # create taxi object
 my_taxi.drive(40)  # drive the taxi 40 km
 print(my_taxi)  # print the taxi's details
 print(my_taxi.get_fare())  # print the taxi's current fair
