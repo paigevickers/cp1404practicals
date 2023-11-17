@@ -25,14 +25,22 @@ def main():
                 print(f"{i} {taxi}")
             current_taxi = get_current_taxi(taxis)
 
-        if menu_choice == "D":
+        elif menu_choice == "D":
+            # if current_taxi is None:
+            #     print("You need to choose a taxi before you can drive")
             distance = float(input("Drive how far? "))
             current_taxi.drive(distance)
-            print(f"Your {current_taxi.name} cost you {current_taxi.get_fare()}")
-            total_fare = update_cost(current_taxi.get_fare())
+            print(f"Your {current_taxi.name} cost you ${current_taxi.get_fare():.2f}")
+            total_fare += current_taxi.get_fare()
+
+        print(f"Bill to date: ${total_fare:.2f}")
         print(MENU)
         menu_choice = get_valid_choice()
-        print(f"Bill to date: ${total_fare}")
+
+    print(f"Total trip cost: ${total_fare}")
+    print("Taxi's now:")
+    for i, taxi in enumerate(taxis):
+        print(f"{i} {taxi}")
 
 
 def get_valid_choice():
@@ -52,9 +60,5 @@ def get_current_taxi(taxis):
     except IndexError:
         print("Invalid taxi choice")
 
-
-def update_cost(new_fare):
-    total_fare += new_fare
-    return total_fare
 
 main()
